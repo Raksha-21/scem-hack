@@ -49,6 +49,8 @@ def match_jobs(mentee_skills, preferred_location, expected_salary, expected_role
     job_data = job_data.sort_values(by="similarity", ascending=False)
 
     # Step 6: Create and save bar chart
+    import os
+    os.makedirs("static", exist_ok=True)
     plt.figure(figsize=(8, 4))
     plt.bar(job_data["role"], job_data["salary"], color="steelblue")
     plt.xlabel("Job Roles")

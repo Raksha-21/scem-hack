@@ -23,3 +23,28 @@ dist-ssr
 *.sln
 *.sw?
 .env
+
+# Python files
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Virtual environment
+.venv/
+venv/
+ENV/
+backend/.venv/
+backend/venv/
+
+# Local database instances
+instance/
+*.db
+backend/instance/
+
+# Generated files / uploads
+uploads/
+backend/uploads/
+static/roles_vs_salaries.png
+backend/static/roles_vs_salaries.png
+*.png

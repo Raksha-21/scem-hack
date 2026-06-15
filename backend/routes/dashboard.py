@@ -12,6 +12,8 @@ def home():
 def upload_profile():
     data = request.form
     file = request.files['file']
+    import os
+    os.makedirs('uploads', exist_ok=True)
     path = f'uploads/{file.filename}'
     file.save(path)
 
